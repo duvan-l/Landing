@@ -1,0 +1,334 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --header:90px;
+  --color-primary:#812181;
+}
+
+body{
+  background-color: #f2f2f2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bg-black{
+  background-color: #000;
+}
+.gris{
+  background-color: rgb(219, 219, 219);
+}
+.contenedor{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header{
+  
+}
+
+.header__menu{
+  height: var(--header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav{
+
+}
+
+.nav__list{
+  display: flex;  
+  align-items:center;
+  gap: 4rem;
+  list-style: none;
+}
+.nav__item{
+  padding: 24px;
+}
+
+.nav__link{
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.nav__link--secundario{
+  background-color: #000;
+  color: #f2f2f2;
+  padding: 12px 26px;
+}
+
+.nav__boton{
+    background: transparent;
+    border: none;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+#inicio{
+ /* background-image: url("saludo.png"); 
+ background-repeat: no-repeat;
+ background-size: calc(100%);
+ height: calc(100vh - var(--header)); */
+ /* background-color: grey; */
+}
+
+.slider{
+  height: calc(100vh - var(--header));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.slider__contender{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slider__iformacion{
+  flex: 1;
+  max-width: 620px;
+  margin: 0 20px;
+}
+
+.slider__imagen{
+
+}
+
+.slider__img{
+  max-width: 720px;
+}
+
+.slider__titulo{
+  font-size: 6rem;
+  padding-bottom: 30px;
+}
+
+.titulo__flaco{
+  font-weight: lighter;
+  font-size: 2rem;
+}
+.slider__parrafo{
+    line-height: 1.8;
+    color: #1c1c1c;
+    padding-top: 30px;
+}
+
+.slider__botones{
+  display: flex;
+  gap: 1rem;
+  padding-top: 30px;
+}
+
+.slider__accion{
+  display: flex;
+  justify-content: space-between;
+}
+
+.accion__flecha{
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 12px 26px; 
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.botonn{
+  background: #812181;
+  padding: 12px 24px;
+  color: #f2f2f2;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.botonn--blanco{
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/**-------------------
+-----Banner negro ----
+-------------------**/
+
+.llamado{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+.llamado__fecha{
+  border: solid 1px #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/**------------------------------
+---------EXPLORE----------------
+-------------------------------**/
+.total{
+  height: 100vh;
+}
+.explore{
+  display: grid;
+  gap: 3rem;
+  grid-template:
+  "uno dos tres " 300px 
+  "cuatro dos sexto" 300px 
+  "septimo octavo noveno" 150px/  auto auto auto;
+
+}
+
+.text{
+display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+
+.uno{
+  grid-area: uno;
+  
+}
+.dos{
+  grid-area: dos;
+
+}
+
+.grafico{
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.imagen{
+  width: 500px;
+}
+
+.flecha{
+  background-color: transparent;
+  border: none;
+  font-size: 42px;
+}
+.tres{
+  grid-area: tres;
+  
+}
+.cuatro{
+  grid-area: cuatro;
+ 
+}
+.text__medio{
+   rotate: -90deg;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  align-items: start;
+  font-weight: 800;
+}
+.cinco{
+  grid-area: dos;
+}
+
+.sexto{
+  grid-area: sexto;
+  rotate: 90deg;
+}
+
+
+.septimo{
+  grid-area: septimo;
+  display: flex;
+  justify-content: start;
+  padding: 0px 30px;
+  font-size: 28px;
+  font-weight: 800;
+  padding-bottom: 40px;
+}
+
+.octavo{
+  grid-area: octavo;
+}
+
+.noveno{
+  grid-area: noveno;
+  display: flex;
+  justify-content: end;
+  padding: 0px 30px;
+  font-size: 28px;
+  font-weight: 800; 
+  padding-bottom: 40px;
+}
+
+
+/* cards */
+.contenedor_card{
+display: flex;
+gap: 6rem;
+padding-top: 90px;
+padding-bottom: 90px;
+justify-content: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: solid 1px #ffffff;
+  padding: 22px;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0 0px 10px 0px #d9d9d9;
+  background-color: #ebebeb;
+}
+
+.card__title{
+text-align: center;
+font-size: 2rem;  
+padding: 4px 0;
+}
+
+.card__text{
+text-align: center;
+}
+
+.card--border{
+  border: solid 2px var(--color-primary);
+}
+
+/* trabajo */
+.contenedor_work{
+  height: 100vh;
+  background-color: #812181;
+  display: flex;
+  align-items: center;
+  grid-template-columns: auto;
+}
+
+.work_text{
+  flex: 1;
+}
+
+.work_img{
+  flex: 1;
+}
