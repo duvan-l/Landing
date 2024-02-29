@@ -6,7 +6,7 @@
 
 :root{
   --header:90px;
-  --color-primary:#812181;
+  --color-primary: #812181;
 }
 
 body{
@@ -19,8 +19,9 @@ body{
   background-color: #000;
 }
 .gris{
-  background-color: rgb(219, 219, 219);
+  background-color: #e2e2e2;
 }
+
 .contenedor{
   max-width: 1600px;
   margin: 0 auto;
@@ -181,15 +182,20 @@ body{
 /**------------------------------
 ---------EXPLORE----------------
 -------------------------------**/
+
 .total{
   height: 100vh;
 }
+
 .explore{
+ 
+  
   display: grid;
-  gap: 3rem;
+  
+  
   grid-template:
-  "uno dos tres " 300px 
-  "cuatro dos sexto" 300px 
+  "uno dos tres " 380px 
+  "cuatro dos sexto" 380px 
   "septimo octavo noveno" 150px/  auto auto auto;
 
 }
@@ -200,58 +206,74 @@ display: flex;
   justify-content: center;
   font-size: 32px;
   text-transform: capitalize;
+  
 }
 
 
 .uno{
   grid-area: uno;
   
+
+
 }
 .dos{
   grid-area: dos;
-
-}
-
-.grafico{
-  display: flex; 
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3rem;
+ 
 }
 
 .imagen{
-  width: 500px;
+  width: 600px;
+}
+.grafico{
+   display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 3rem;
+  
 }
 
 .flecha{
   background-color: transparent;
   border: none;
   font-size: 42px;
+  
 }
+
 .tres{
   grid-area: tres;
   
 }
+
+
 .cuatro{
   grid-area: cuatro;
- 
+  
+  
 }
-.text__medio{
-   rotate: -90deg;
+
+.text_medio{
+rotate: -90deg;
   display: flex;
-  justify-content: center;
-  font-size: 28px;
+  justify-content: center ;
   align-items: start;
+
+  font-size: 28px;
   font-weight: 800;
 }
+
+
 .cinco{
   grid-area: dos;
 }
 
 .sexto{
   grid-area: sexto;
-  rotate: 90deg;
+  rotate: 90deg; 
 }
 
 
@@ -263,6 +285,7 @@ display: flex;
   font-size: 28px;
   font-weight: 800;
   padding-bottom: 40px;
+
 }
 
 .octavo{
@@ -275,60 +298,202 @@ display: flex;
   justify-content: end;
   padding: 0px 30px;
   font-size: 28px;
-  font-weight: 800; 
+  font-weight: 800;
   padding-bottom: 40px;
 }
 
 
-/* cards */
-.contenedor_card{
-display: flex;
-gap: 6rem;
-padding-top: 90px;
-padding-bottom: 90px;
-justify-content: center;
-}
+/**----------------------------------------------
+-------------------CARD-------------------------
+------------------------------------------------**/
 
+.contenedor_card{
+  display: flex;
+  gap: 6rem;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  justify-content: center;
+}
 .card{
   display: flex;
-  flex-direction: column;
   width: 300px;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   padding: 22px;
+  flex-direction: column;
   gap: 2rem;
   align-items: center;
   border-radius: 50px;
   box-shadow: 0 0px 10px 0px #d9d9d9;
   background-color: #ebebeb;
+  
 }
 
+
 .card__title{
-text-align: center;
-font-size: 2rem;  
-padding: 4px 0;
+  text-align: center;
+  font-size: 2rem;
+  padding: 4px 0;
 }
 
 .card__text{
 text-align: center;
 }
 
+
+
 .card--border{
   border: solid 2px var(--color-primary);
 }
 
-/* trabajo */
+
+/**-----------------------------------------------------
+-------------------TRABAJO------------------------------
+-----------------------------------------------------**/
+
+
 .contenedor_work{
-  height: 100vh;
-  background-color: #812181;
-  display: flex;
-  align-items: center;
-  grid-template-columns: auto;
+display: grid;
+grid-template: 
+  "texto centrado indice"  100px
+  "texto centrado imagen"  200px
+  "texto centrado imagen"  300px/ 800px 150px 650px;
 }
-
-.work_text{
-  flex: 1;
+.work_text {
+ grid-area: texto;
+background-color: blue;
+flex-direction: column;
+justify-content: center;
 }
+.work_centro {
+  grid-area: centrado;
+background-color: green;
+display: flex;
+flex-direction: column;
+justify-content: end;
 
+}
+.texto_centro{
+  rotate: 90deg;
+}
+.indice{
+  grid-area: indice;
+  background-color: yellowgreen;
+}
 .work_img{
-  flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   grid-area: imagen;
+   background-color: aqua;
+
+
+}
+
+
+
+
+/**-----------------------------------------------------
+---------------negro con sombrero-----------------------
+-----------------------------------------------------**/
+
+ /**----------------------------------------------------
+ ------------------magenta------------------------------
+ -----------------------------------------------------**/
+
+/* .contenedor_magenta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+  background-color: #ac59ac;
+  font-weight: 700px;
+  font-size: 20px;
+  
+ }
+ .magenta_botonn{
+  background: #812181;
+  padding: 12px 24px;
+  color: #f2f2f2;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+ }
+ .magenta_text{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .magenta_flecha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #f1f1f1;
+  padding: 20px;
+ } 
+
+ .magenta_uno{
+  display: flex;
+  flex-direction: column;
+  
+ } */
+
+.contenedor_magenta{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.magenta_uno{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+
+.seccion_magenta{
+  background-color: #c359c3;
+}
+
+.magenta_texto1{
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.magenta_texto2{
+  font-size: 40px;
+  font-weight: lighter;
+  padding-bottom: 30px;
+}
+
+.magenta_botonn{
+  background: black;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.magenta_dos{
+  opacity: 60%;
+  
+}
+
+.magenta_flecha{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border: none /*solid 1px #f1f1f1*/;
+  font-size: 42px;
+  padding: 20px;
+}
+
+.flecha{
+  color: white;
+  border: solid 1px white;
+  padding-left: 30px;
+  padding-right: 30px;
 }
